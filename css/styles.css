@@ -1,0 +1,135 @@
+:root {
+    /* color */
+    --main-light-color: #fff;
+    --main-dark-color: #1F2937;
+    --gray-color: #D1D5DB;
+
+    /* Text Color */
+    --main-text-light: var(--main-dark-color);
+    --main-text-dark: var(--main-light-color);
+
+    /* Font Family */
+    --main-font-family: 'Inter';
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-body {
+    width: 550px;
+    height: 28em;
+    background-color: var(--main-light-color);
+
+    box-shadow: 0 2px 2px rgba(127, 125, 125, 0.5);
+
+}
+
+/* Header Section */
+.header {
+    width: 550px;
+    height: 90px;
+
+    background: var(--main-light-color);
+    box-shadow: 0px 4px 11px rgba(127, 125, 125, 0.5);
+
+    /* Box-Sizing */
+    padding: 0 1.5em;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+input[type=color] {
+    width: 4em;
+    height: 3em;
+    border: 1px solid var(--gray-color);
+}
+
+select {
+    box-sizing: border-box;
+    width: 20em;
+    height: 3em;
+
+    background: var(--main-light-color);
+    border: 1px solid var(--gray-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+select:active,
+select:focus {
+    outline: none;
+}
+
+button {
+    /* Sizing */
+    height: 3em;
+    width: auto;
+    padding: .2em 1em;
+
+    background: var(--main-light-color);
+    border: 1px solid var(--gray-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+button:hover,
+button:active {
+    color: var(--main-light-color);
+    background-color: var(--main-dark-color);
+}
+
+/* Body Section */
+.inner-body {
+    width: 550px;
+    height: 550px;
+    background-color: var(--main-light-color);
+
+    box-sizing: border-box;
+}
+
+.inner-body_wrapper {
+    width: 100%;
+    height: 20em;
+    display: flex;
+}
+
+.color {
+    width: 100%;
+    height: 20em;
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    height: 3em;
+}
+
+.footer_wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.col {
+    width: 100%;
+    box-shadow: 0 1px 2px var(--gray-color);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.col p {
+    text-align: center;
+    padding-top: .8rem;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
